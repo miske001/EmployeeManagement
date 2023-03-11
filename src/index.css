@@ -1,0 +1,191 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main{
+  width: 75%;
+  margin: auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.content{
+  margin-top: 5rem;
+}
+table{
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+td,th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+.btn-add{
+  margin-top: 10px;
+  padding: 0.75rem 1.5rem;
+  border: 1px cyan;
+  color: white;
+  background: teal;
+  font-size: 14px;
+  cursor: pointer;
+}
+.cta-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.btn-update{
+  padding: 0.4rem 0.8rem;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn-delete{
+  padding: 0.4rem 0.8rem;
+  background: rgb(231, 61, 61);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-modal{
+  position: absolute;
+  display: flex;
+  height: min-content;
+  width: 25rem;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%);
+  background-color: white;
+  border: 1px solid teal;
+}
+.btn-close-modal{
+  position: absolute;
+  right: 3px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.add-modal-content{
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+.add-modal-content h2{
+  margin-bottom: 10px;
+}
+.add-modal-content input{
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  border: transparent;
+  border-bottom: 1px solid teal;
+  box-sizing: border-box;
+}
+.add-modal-content input:focus{
+  border: 1px solid teal;
+  outline: none !important;
+}
+.add-modal-content input::placeholder{
+  color: teal;
+}
+.add-modal-content label{
+  font-weight: 600;
+}
+.add-modal-content .add{
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+  padding: 0.625rem 1.5rem;
+  border: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+}
+.delete-modal{
+  position: absolute;
+  display: flex;
+  height: min-content;
+  width: 25rem;
+  left: 50%;
+  top: 23%;
+  transform: translate(-50%);
+  background-color: white;
+  border: 1px solid teal;
+}
+.del-modal-content{
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.del-modal-content h2{
+  text-align: center;
+}
+.del-modal-content .cta-btns{
+  gap: 30px;
+}
+.btn-yes{
+  padding: 5px 12px;
+  cursor: pointer;
+  background: teal;
+  color: white;
+  border: none;
+}
+.btn-no{
+  padding: 5px 12px;
+  cursor: pointer;
+  background: rgb(231, 61, 61);
+  color: white;
+  border: none;
+}
+
+.update-modal{
+  position: absolute;
+  display: flex;
+  height: min-content;
+  width: 25rem;
+  left: 50%;
+  top: 13%;
+  transform: translate(-50%);
+  background-color: white;
+  border: 1px solid teal;
+}
+
+.task-btn{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.task-btn-container{
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.upd{
+  color: teal;
+}
+.del{
+  color: rgb(231, 61, 61);
+}
